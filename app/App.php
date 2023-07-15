@@ -40,3 +40,4 @@ $income_str = $currency_fmt->formatCurrency($income, $currency);
 $expense_str = $currency_fmt->formatCurrency($expense, $currency);
 $net_total_str = $currency_fmt->formatCurrency($income + $expense, $currency);
 
+require VIEWS_PATH . 'transactions.php';
