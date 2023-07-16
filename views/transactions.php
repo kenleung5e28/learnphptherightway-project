@@ -34,27 +34,27 @@
                 </tr>
             </thead>
             <tbody>
-            <?php foreach ($transactions['Date'] as $i => $date) :?>
+            <?php foreach ($transactions['Date'] as $i => $date): ?>
                 <tr>
-                    <th><?php echo $date; ?></th>
-                    <th><?php echo $transactions['Check #'][$i]; ?></th>
-                    <th><?php echo $transactions['Description'][$i]; ?></th>
-                    <th><?php echo $transactions['Amount'][$i]; ?></th>
+                    <th><?= $date ?></th>
+                    <th><?= $transactions['Check #'][$i] ?></th>
+                    <th><?= $transactions['Description'][$i] ?></th>
+                    <th><?= $transactions['Amount'][$i] ?></th>
                 </tr>
             <?php endforeach; ?>
             </tbody>
             <tfoot>
                 <tr>
                     <th colspan="3">Total Income:</th>
-                    <td><?php echo $income_str; ?></td>
+                    <td><?= $income_str ?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Total Expense:</th>
-                    <td><?php echo $expense_str; ?></td>
+                    <td><?= $expense_str ?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Net Total:</th>
-                    <td><?php echo $net_total_str; ?></td>
+                    <td><?= $net_total_str ?></td>
                 </tr>
             </tfoot>
         </table>
