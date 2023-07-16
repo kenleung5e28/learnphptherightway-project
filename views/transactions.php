@@ -34,7 +34,14 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- YOUR CODE -->
+            <?php foreach ($transactions['Date'] as $i => $date) :?>
+                <tr>
+                    <th><?php echo $date; ?></th>
+                    <th><?php echo $transactions['Check #'][$i]; ?></th>
+                    <th><?php echo $transactions['Description'][$i]; ?></th>
+                    <th><?php echo $transactions['Amount'][$i]; ?></th>
+                </tr>
+            <?php endforeach; ?>
             </tbody>
             <tfoot>
                 <tr>
